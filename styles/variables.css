@@ -1,0 +1,23 @@
+:root {
+    --body-bg-color: #1A202C;
+    --box-bg-color: #212834;
+    --base-color: #805AD5;
+    --base-margin: 12px;
+    --base-padding: 17px;
+    --second-color: #A37DF9;
+    --border-color: #686868;
+    --text-color-red: #E04F44;
+    --text-color-green: #61E224;
+    --white: #FFFFFF;
+    --black: #686868;
+    --base-border-radius: 10px;
+    --base-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+    /* input */
+    --input-height: 40px;
+    --input-border-color: #2B3548;
+    --input-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    --input-border-radius: 7px;
+}
+

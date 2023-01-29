@@ -1,0 +1,44 @@
+.sidebar {
+    width: 410px;
+}
+
+
+.sidebar .filters {
+}
+
+.sidebar .subscribe {
+    position: relative;
+}
+
+.sidebar .subscribe p {
+    padding: 25px var(--base-padding);
+    width: 90%;
+    font-weight: 500;
+    font-size: 16.0543px;
+    color: var(--white);
+}
+
+.sidebar .subscribe img {
+    position: absolute;
+    top: var(--base-padding);
+    right: var(--base-padding);
+    cursor: pointer;
+}
+
+.sidebar .subscribe button {
+    width: 340px;
+}
+
+.sidebar .filters .line-item span {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--white);
+}
+.sidebar .filters .binance-features {
+    padding: 14px 24px;
+    border-radius: var(--base-border-radius);
+}
+
+.sidebar .filters .binance-features-active {
+    background-color: var(--box-bg-color);
+}

@@ -1,0 +1,43 @@
+.G-flex { display: flex}
+.G-flex-justify-center { display: flex; justify-content: center }
+.G-flex-justify-between { display: flex; justify-content: space-between }
+.G-flex-justify-start { display: flex; justify-content: start }
+.G-flex-justify-end { display: flex; justify-content: end }
+.G-flex-column { display: flex; flex-direction: column }
+.G-flex-align-start { display: flex; align-items: start }
+.G-flex-align-center { display: flex; align-items: center }
+.G-flex-align-end { display: flex; align-items: end }
+.G-align-self-start { align-self: start }
+.G-align-self-center { align-self: center }
+.G-align-self-end { align-self: end }
+.G-m-base { margin: var(--base-margin) }
+.G-mt-base { margin-top: var(--base-margin) }
+.G-mb-base { margin-bottom: var(--base-margin) }
+.G-mr-base { margin-right: var(--base-margin) }
+.G-ml-base { margin-left: var(--base-margin) }
+.G-p-base { padding: var(--base-padding) }
+.G-pl-base { padding-left: var(--base-padding) }
+.G-pr-base { padding-right: var(--base-padding) }
+.G-pt-base { padding-top: var(--base-padding) }
+.G-pb-base { padding-bottom: var(--base-padding) }
+.G-color-base { color: var(--base-color) }
+.G-color-second { color: var(--second-color) }
+.G-bg-base { background-color: var(--box-bg-color) }
+.G-border-base { border: 1px solid var(--border-color) }
+.G-border-radius { border-radius: 10px }
+.G-white { color: var(--white) }
+.G-m-0 { margin: 0!important;}
+.G-p-0 { padding: 0!important;}
+.G-w-100p { width: 100% }
+.G-h-100p { height: 100% }
+.G-w-100vw { width: 100vw }
+.G-h-100vh { height: 100vh }
+.G-base-gap { gap: var(--base-padding) }
+.G-small-gap { gap: 7px }
+.G-base-box-shadow { box-shadow: var(--base-box-shadow) }
+.G-text-red { color: var(--text-color-red) !important }
+.G-text-green { color: var(--text-color-green) !important }
+.G-text-size-big { font-size: 22px!important; }
+.G-text-size-normal { font-size: 16px }
+.G-bg-body { background-color: var(--body-bg-color) !important }
+.G-border-radius-small { border-radius: var(--input-border-radius) !important }

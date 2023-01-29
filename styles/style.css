@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Axiforma, sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    background-color: var(--body-bg-color);
+}
+
+.center-container {
+    padding: var(--base-margin) 5px 0 54px;
+    height: calc(100vh - 80px);
+}
+
+.red-chart {
+    width: 300px;
+    zoom: 0.20
+}
+
+.green-chart {
+    width: 300px;
+    zoom: 0.4
+}
+
+.hr {
+    width: 100%;
+    border-top: 1px solid #686868;
+}
+
+.box {
+    background-color: var(--box-bg-color);
+    border-radius: var(--base-border-radius);
+    padding: var(--base-padding);
+    box-shadow: var(--base-box-shadow);
+}
+
+.bold-text {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: var(--second-color);
+    border: none;
+    border-radius: var(--base-border-radius);
+    text-align: center;
+    content: var(--white);
+    height: 40px;
+    min-width: 100px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container img {
+    position: absolute;
+    right: var(--base-padding);
+    top: 12px;
+}
+
+input {
+    background-color: var(--body-bg-color);
+    border-radius: var(--input-border-radius);
+    border: 1px solid var(--input-border-color);
+    box-shadow: var(--input-box-shadow);
+    height: var(--input-height);
+}
+input::placeholder {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 12px;
+    padding-left: var(--base-padding);
+}

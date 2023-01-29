@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/helpers.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/side-bar.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+
+<div class="container G-bg-base G-w-100vw">
+    <div class="header G-flex-justify-between G-flex-align-center G-base-box-shadow">
+        <div class="header-logo">
+            <img src="images/header/logo.svg" alt="logo">
+        </div>
+        <ul class="header-links-container G-flex">
+            <li class="G-flex-align-center header-links-item header-links-item-active">
+                <img src="images/header/menu-icons/home.svg" alt="home_icon">
+                Home
+            </li>
+            <li class="G-flex-align-center header-links-item">
+                <img src="images/header/menu-icons/portfolio.svg" alt="portfolio_icon">
+                Portfolio
+            </li>
+            <li class="G-flex-align-center header-links-item">
+                <img src="images/header/menu-icons/price.svg" alt="pricing_icon">
+                Pricing
+            </li>
+            <li class="G-flex-align-center header-links-item">
+                <img src="images/header/menu-icons/marketplace.svg" alt="marketplace_icon">
+                Marketplace
+            </li>
+            <li class="G-flex-align-center header-links-item">
+                <img src="images/header/menu-icons/feature.svg" alt="features_icon">
+                Features
+            </li>
+            <li class="G-flex-align-center header-links-item">
+                <img src="images/header/menu-icons/settings.svg" alt="settings_icon">
+                Settings
+            </li>
+        </ul>
+        <div class="header-auth-state G-flex G-base-gap">
+            <img src="images/header/user-default-img.svg" alt="">
+            <img src="images/header/sun.svg" alt="">
+        </div>
+    </div>
+    <div class="center-container G-mt-base G-flex G-base-gap">
+        <div class="sidebar">
+            <div class="box filters G-flex-column G-base-gap">
+                <div class="G-flex G-small-gap">
+                    <div class="input-container">
+                        <input placeholder="Hide small balances" type="password">
+                        <img src="images/content/sidebar/balance/hide-password.svg" alt="hide_password_icon">
+                    </div>
+                    <div class="input-container">
+                        <input placeholder="Sort" type="text">
+                        <img src="images/content/sidebar/balance/arrow-with-lines.svg" alt="arrow_with_lines_icon">
+                    </div>
+                </div>
+                <div class="input-container">
+                    <input class="G-w-100p" placeholder="Sort" type="text">
+                    <img src="images/content/sidebar/balance/search.svg" alt="search_icon">
+                </div>
+                <div class="line-item G-flex-justify-between G-flex-align-center">
+                    <img src="images/content/sidebar/balance/fox.svg" alt="fox_icon">
+                    <span class="line-item-name">Metamask</span>
+                    <span class="line-item-name G-text-red">4.85%</span>
+                    <div class="red-chart"><canvas id="chart1"></canvas></div>
+                    <div class="G-flex">
+                        <img src="images/content/sidebar/balance/pen.svg" alt="pen_icon">
+                        <img src="images/content/sidebar/balance/trash.svg" alt="trash_icon">
+                    </div>
+                </div>
+                <div class="box G-bg-body G-border-radius-small G-base-gap G-flex-column">
+                    <div class="G-flex-justify-between G-flex-align-center">
+                        <div class="G-flex-align-center G-base-gap">
+                            <img src="images/content/sidebar/balance/binance.svg" alt="binance_icon">
+                            <span class="bold-text">Binance</span>
+                        </div>
+                        <span class="bold-text G-text-green">4.85%</span>
+                    </div>
+                    <div class="G-flex-justify-between G-flex-align-center">
+                        <span class="bold-text G-text-size-big">$1000.00</span>
+                        <div class="green-chart"><canvas id="chart6"></canvas></div>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="binance-features G-flex-align-center G-base-gap">
+                        <img src="images/content/sidebar/balance/binance.svg" alt="binance_icon">
+                        <span class="bold-text">Binance Savings</span>
+                    </div>
+                    <div class="binance-features binance-features-active G-flex-align-center G-base-gap">
+                        <img src="images/content/sidebar/balance/binance.svg" alt="binance_icon">
+                        <span class="bold-text">Binance Futures</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="line-item G-flex-justify-between G-flex-align-center">
+                        <img src="images/content/sidebar/balance/circle.svg" alt="circle_icon">
+                        <span class="line-item-name">Coinbase</span>
+                        <span class="line-item-name G-text-red">4.85%</span>
+                        <div class="red-chart"><canvas id="chart2"></canvas></div>
+                        <div class="G-flex">
+                            <img src="images/content/sidebar/balance/pen.svg" alt="pen_icon">
+                            <img src="images/content/sidebar/balance/trash.svg" alt="trash_icon">
+                        </div>
+                    </div>
+                    <div class="line-item G-flex-justify-between G-flex-align-center">
+                        <img src="images/content/sidebar/balance/circle.svg" alt="circle_icon">
+                        <span class="line-item-name">Coinbase</span>
+                        <span class="line-item-name G-text-red">4.85%</span>
+                        <div class="red-chart"><canvas id="chart3"></canvas></div>
+                        <div class="G-flex">
+                            <img src="images/content/sidebar/balance/pen.svg" alt="pen_icon">
+                            <img src="images/content/sidebar/balance/trash.svg" alt="trash_icon">
+                        </div>
+                    </div>
+                    <div class="line-item G-flex-justify-between G-flex-align-center">
+                        <img src="images/content/sidebar/balance/circle.svg" alt="circle_icon">
+                        <span class="line-item-name">Coinbase</span>
+                        <span class="line-item-name G-text-red">4.85%</span>
+                        <div class="red-chart"><canvas id="chart4"></canvas></div>
+                        <div class="G-flex">
+                            <img src="images/content/sidebar/balance/pen.svg" alt="pen_icon">
+                            <img src="images/content/sidebar/balance/trash.svg" alt="trash_icon">
+                        </div>
+                    </div>
+                    <div class="line-item G-flex-justify-between G-flex-align-center">
+                        <img src="images/content/sidebar/balance/circle.svg" alt="circle_icon">
+                        <span class="line-item-name">Coinbase</span>
+                        <span class="line-item-name G-text-red">4.85%</span>
+                        <div class="red-chart"><canvas id="chart5"></canvas></div>
+                        <div class="G-flex">
+                            <img src="images/content/sidebar/balance/pen.svg" alt="pen_icon">
+                            <img src="images/content/sidebar/balance/trash.svg" alt="trash_icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box subscribe G-mt-base G-flex-column">
+                <img src="images/content/sidebar/subscribe/close-icon.svg" alt="close-icon">
+                <p>
+                    Your free trial has been started․ There are <span class="G-text-red">5 days</span> left.
+                </p>
+                <button class="btn G-align-self-center">Subscribe</button>
+            </div>
+        </div>
+        <div class="content G-flex-column G-base-gap">
+            <div class="first-section G-flex G-base-gap">
+                <div class="box total-points"></div>
+                <div class="box exchanges"></div>
+                <div class="box coins"></div>
+            </div>
+            <div class="second-section G-flex G-base-gap">
+                <div class="box balance"></div>
+                <div class="box analytics"></div>
+                <div class="box features"></div>
+            </div>
+            <div class="third-section">
+                <div class="box table"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
