@@ -1,0 +1,39 @@
+
+.thead {
+    background: #272E3C;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thead,
+.tbody {
+    padding: 13px 44px;
+}
+
+.table-data {
+    width: 12.5%;
+    display: flex;
+}
+
+.thead .table-data {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.tbody .table-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tbody .table-row .table-data {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+

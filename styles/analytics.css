@@ -1,0 +1,12 @@
+.analytics-container .analytics-item {
+    padding: 7px 18px 7px 30px;
+    border: 1px solid var(--base-color);
+    border-radius: var(--base-border-radius);
+    background: linear-gradient(180deg, #2B3341 0%, rgba(61, 73, 95, 0.00693628) 99.99%, rgba(33, 39, 51, 0) 100%);
+}
+
+.analytics-container .analytics-item span {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--white);
+}

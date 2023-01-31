@@ -41,3 +41,4 @@
 .G-text-size-normal { font-size: 16px }
 .G-bg-body { background-color: var(--body-bg-color) !important }
 .G-border-radius-small { border-radius: var(--input-border-radius) !important }
+.G-cursor { cursor: pointer }

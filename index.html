@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/side-bar.css">
     <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="styles/analytics.css">
+    <link rel="stylesheet" href="styles/coming-soon.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -56,7 +59,7 @@
     <div class="center-container G-mt-base G-flex G-base-gap">
         <div class="sidebar">
             <div class="box filters G-flex-column G-base-gap">
-                <div class="G-flex G-small-gap">
+                <div class="G-flex-justify-between">
                     <div class="input-container">
                         <input placeholder="Hide small balances" type="password">
                         <img src="images/content/sidebar/balance/hide-password.svg" alt="hide_password_icon">
@@ -74,7 +77,9 @@
                     <img src="images/content/sidebar/balance/fox.svg" alt="fox_icon">
                     <span class="line-item-name">Metamask</span>
                     <span class="line-item-name G-text-red">4.85%</span>
-                    <div class="red-chart"><canvas id="chart1"></canvas></div>
+                    <div class="red-chart">
+                        <canvas id="chart1"></canvas>
+                    </div>
                     <div class="G-flex">
                         <img src="images/content/sidebar/balance/pen.svg" alt="pen_icon">
                         <img src="images/content/sidebar/balance/trash.svg" alt="trash_icon">
@@ -90,7 +95,9 @@
                     </div>
                     <div class="G-flex-justify-between G-flex-align-center">
                         <span class="bold-text G-text-size-big">$1000.00</span>
-                        <div class="green-chart"><canvas id="chart6"></canvas></div>
+                        <div class="green-chart">
+                            <canvas id="chart6"></canvas>
+                        </div>
                     </div>
                     <div class="hr"></div>
                     <div class="binance-features G-flex-align-center G-base-gap">
@@ -107,7 +114,9 @@
                         <img src="images/content/sidebar/balance/circle.svg" alt="circle_icon">
                         <span class="line-item-name">Coinbase</span>
                         <span class="line-item-name G-text-red">4.85%</span>
-                        <div class="red-chart"><canvas id="chart2"></canvas></div>
+                        <div class="red-chart">
+                            <canvas id="chart2"></canvas>
+                        </div>
                         <div class="G-flex">
                             <img src="images/content/sidebar/balance/pen.svg" alt="pen_icon">
                             <img src="images/content/sidebar/balance/trash.svg" alt="trash_icon">
@@ -117,7 +126,9 @@
                         <img src="images/content/sidebar/balance/circle.svg" alt="circle_icon">
                         <span class="line-item-name">Coinbase</span>
                         <span class="line-item-name G-text-red">4.85%</span>
-                        <div class="red-chart"><canvas id="chart3"></canvas></div>
+                        <div class="red-chart">
+                            <canvas id="chart3"></canvas>
+                        </div>
                         <div class="G-flex">
                             <img src="images/content/sidebar/balance/pen.svg" alt="pen_icon">
                             <img src="images/content/sidebar/balance/trash.svg" alt="trash_icon">
@@ -127,7 +138,9 @@
                         <img src="images/content/sidebar/balance/circle.svg" alt="circle_icon">
                         <span class="line-item-name">Coinbase</span>
                         <span class="line-item-name G-text-red">4.85%</span>
-                        <div class="red-chart"><canvas id="chart4"></canvas></div>
+                        <div class="red-chart">
+                            <canvas id="chart4"></canvas>
+                        </div>
                         <div class="G-flex">
                             <img src="images/content/sidebar/balance/pen.svg" alt="pen_icon">
                             <img src="images/content/sidebar/balance/trash.svg" alt="trash_icon">
@@ -137,7 +150,9 @@
                         <img src="images/content/sidebar/balance/circle.svg" alt="circle_icon">
                         <span class="line-item-name">Coinbase</span>
                         <span class="line-item-name G-text-red">4.85%</span>
-                        <div class="red-chart"><canvas id="chart5"></canvas></div>
+                        <div class="red-chart">
+                            <canvas id="chart5"></canvas>
+                        </div>
                         <div class="G-flex">
                             <img src="images/content/sidebar/balance/pen.svg" alt="pen_icon">
                             <img src="images/content/sidebar/balance/trash.svg" alt="trash_icon">
@@ -155,17 +170,208 @@
         </div>
         <div class="content G-flex-column G-base-gap">
             <div class="first-section G-flex G-base-gap">
-                <div class="box total-points"></div>
-                <div class="box exchanges"></div>
-                <div class="box coins"></div>
+                <div class="box total-points">
+                    <div class="action G-flex-justify-between">
+                        <h5 class="title">Total Points</h5>
+                        <span class="subtitle G-cursor">See more</span>
+                    </div>
+                    <div class="waviy">
+                        <span style="--i:1">C</span>
+                        <span style="--i:2">o</span>
+                        <span style="--i:3">m</span>
+                        <span style="--i:4">i</span>
+                        <span style="--i:5">n</span>
+                        <span style="--i:6">g</span>
+                        <span style="--i:7">  </span>
+                        <span style="--i:9">S</span>
+                        <span style="--i:10">o</span>
+                        <span style="--i:11">o</span>
+                        <span style="--i:12">n</span>
+                    </div>
+                </div>
+                <div class="box exchanges">
+                    <div class="action G-flex-justify-between">
+                        <h5 class="title">Most usable exchanges</h5>
+                        <span class="subtitle G-cursor">See more</span>
+                    </div>
+                    <div class="waviy">
+                        <span style="--i:1">C</span>
+                        <span style="--i:2">o</span>
+                        <span style="--i:3">m</span>
+                        <span style="--i:4">i</span>
+                        <span style="--i:5">n</span>
+                        <span style="--i:6">g</span>
+                        <span style="--i:7">  </span>
+                        <span style="--i:9">S</span>
+                        <span style="--i:10">o</span>
+                        <span style="--i:11">o</span>
+                        <span style="--i:12">n</span>
+                    </div>
+                </div>
+                <div class="box coins">
+                    <div class="action G-flex-justify-between">
+                        <h5 class="title">Coins</h5>
+                        <span class="subtitle G-cursor">See more</span>
+                    </div>
+                    <div class="waviy">
+                        <span style="--i:1">C</span>
+                        <span style="--i:2">o</span>
+                        <span style="--i:3">m</span>
+                        <span style="--i:4">i</span>
+                        <span style="--i:5">n</span>
+                        <span style="--i:6">g</span>
+                        <span style="--i:7">  </span>
+                        <span style="--i:9">S</span>
+                        <span style="--i:10">o</span>
+                        <span style="--i:11">o</span>
+                        <span style="--i:12">n</span>
+                    </div>
+                </div>
             </div>
             <div class="second-section G-flex G-base-gap">
-                <div class="box balance"></div>
-                <div class="box analytics"></div>
-                <div class="box features"></div>
+                <div class="box balance">
+                    <div class="waviy">
+                        <span style="--i:1">C</span>
+                        <span style="--i:2">o</span>
+                        <span style="--i:3">m</span>
+                        <span style="--i:4">i</span>
+                        <span style="--i:5">n</span>
+                        <span style="--i:6">g</span>
+                        <span style="--i:7">  </span>
+                        <span style="--i:9">S</span>
+                        <span style="--i:10">o</span>
+                        <span style="--i:11">o</span>
+                        <span style="--i:12">n</span>
+                    </div>
+                </div>
+                <div class="box analytics">
+                    <div class="action G-flex-justify-between">
+                        <h5 class="title">Analytics</h5>
+                        <span class="subtitle G-cursor">See more</span>
+                    </div>
+                    <div class="analytics-container G-flex-column G-base-gap G-mt-base">
+                        <div class="analytics-item G-flex-justify-between G-flex-align-center">
+                            <img src="images/content/analytics/total-trade.svg" alt="total_trade_icon">
+                            <span class="subtitle">Total Trade Count</span>
+                            <span>128</span>
+                        </div>
+                        <div class="analytics-item G-flex-justify-between G-flex-align-center">
+                            <img src="images/content/analytics/exchange.svg" alt="exchange_icon">
+                            <span class="subtitle">The Most Used Exchanges</span>
+                            <span>Binance</span>
+                        </div>
+                        <div class="analytics-item G-flex-justify-between G-flex-align-center">
+                            <img src="images/content/analytics/withdraw.svg" alt="withdraw_icon">
+                            <span class="subtitle">Total Withdraw</span>
+                            <span>$200</span>
+                        </div>
+                        <div class="analytics-item G-flex-justify-between G-flex-align-center">
+                            <img src="images/content/analytics/free-paid.svg" alt="free-paid_icon">
+                            <span class="subtitle">Total Fee Paid</span>
+                            <span>$12</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box features">
+                    <div class="action G-flex-justify-between">
+                        <h5 class="title">Futures</h5>
+                        <span class="subtitle G-cursor">See more</span>
+                    </div>
+                    <div class="waviy">
+                        <span style="--i:1">C</span>
+                        <span style="--i:2">o</span>
+                        <span style="--i:3">m</span>
+                        <span style="--i:4">i</span>
+                        <span style="--i:5">n</span>
+                        <span style="--i:6">g</span>
+                        <span style="--i:7">  </span>
+                        <span style="--i:9">S</span>
+                        <span style="--i:10">o</span>
+                        <span style="--i:11">o</span>
+                        <span style="--i:12">n</span>
+                    </div>
+                </div>
             </div>
             <div class="third-section">
-                <div class="box table"></div>
+                <div class="box table-container G-p-0">
+                    <div class="action G-flex-justify-between G-p-base">
+                        <h5 class="title">Holding</h5>
+                        <span class="subtitle G-cursor">See more</span>
+                    </div>
+                    <div class="thead">
+                        <span class="table-data">Name</span>
+                        <span class="table-data">Amount</span>
+                        <span class="table-data">Total</span>
+                        <span class="table-data">1 Hour Charge</span>
+                        <span class="table-data">Market Cap</span>
+                        <span class="table-data">Price in BTC</span>
+                        <span class="table-data">Price Graph(7D)</span>
+                        <span class="table-data G-flex-justify-center"><img src="images/content/table/actions.svg" alt="action_icon"></span>
+                    </div>
+                    <div class="tbody">
+                        <div class="table-row">
+                            <span class="table-data G-flex-align-end G-small-gap">
+                                <img src="images/content/table/avatar.svg" alt="avatar_icon">
+                                <span>Aave Abat v2</span>
+                            </span>
+                            <span class="table-data">99</span>
+                            <span class="table-data">$56.48</span>
+                            <span class="table-data">
+                                <img src="images/content/table/green-arrow.svg" alt="green_arrow_icon">
+                                <span class="G-text-green">1.88%</span>
+                            </span>
+                            <span class="table-data">72.8B</span>
+                            <span class="table-data">9.12455558</span>
+                            <span class="table-data">
+                               <div class="green-chart"><canvas id="chart7"></canvas></div>
+                            </span>
+                            <span class="table-data G-cursor G-flex-justify-center">
+                                <img src="images/content/table/more.svg" alt="more_icon">
+                            </span>
+                        </div>
+                        <div class="table-row">
+                            <span class="table-data G-flex-align-end G-small-gap">
+                                <img src="images/content/table/avatar.svg" alt="avatar_icon">
+                                <span>Aave Abat v2</span>
+                            </span>
+                            <span class="table-data">99</span>
+                            <span class="table-data">$56.48</span>
+                            <span class="table-data">
+                                <img src="images/content/table/green-arrow.svg" alt="green_arrow_icon">
+                                <span class="G-text-green">1.88%</span>
+                            </span>
+                            <span class="table-data">72.8B</span>
+                            <span class="table-data">9.12455558</span>
+                            <span class="table-data">
+                               <div class="green-chart"><canvas id="chart8"></canvas></div>
+                            </span>
+                            <span class="table-data G-cursor G-flex-justify-center">
+                                <img src="images/content/table/more.svg" alt="more_icon">
+                            </span>
+                        </div>
+                        <div class="table-row">
+                            <span class="table-data G-flex-align-end G-small-gap">
+                                <img src="images/content/table/avatar.svg" alt="avatar_icon">
+                                <span>Aave Abat v2</span>
+                            </span>
+                            <span class="table-data">99</span>
+                            <span class="table-data">$56.48</span>
+                            <span class="table-data">
+                                <img src="images/content/table/green-arrow.svg" alt="green_arrow_icon">
+                                <span class="G-text-green">1.88%</span>
+                            </span>
+                            <span class="table-data">72.8B</span>
+                            <span class="table-data">9.12455558</span>
+                            <span class="table-data">
+                               <div class="green-chart"><canvas id="chart9"></canvas></div>
+                            </span>
+                            <span class="table-data G-cursor G-flex-justify-center">
+                                <img src="images/content/table/more.svg" alt="more_icon">
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>

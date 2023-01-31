@@ -41,7 +41,7 @@
     height: 350px;
 }
 
-.content .second-section div {
+.content .second-section .box {
     flex-grow: 1;
     height: 315px;
 }
